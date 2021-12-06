@@ -1,0 +1,9 @@
+{
+    "routes": [
+      {
+        "source": "^/spinetest/(.*)$",
+        "target": "$1",
+        "destination": "spinetest"
+      }
+    ]
+  }

@@ -1,0 +1,27 @@
+---
+applications:
+- name: spinetest
+  routes:
+    - route: spinetest-211205.cfapps.us10.hana.ondemand.com
+  path: spinetest
+  memory: 128M
+  services:
+    - spinetestxsuaa
+
+- name: spineapprouter
+  path: approuter
+  buildpacks:
+    - nodejs_buildpack
+  random-route: true
+  memory: 128M
+  env:
+    destinations: >
+      [
+        {
+          "name":"spinetest",
+          "url":"https://spinetest-211205.cfapps.us10.hana.ondemand.com",
+          "forwardAuthToken": true
+        }
+      ]
+  services:
+    - spinetestxsuaa

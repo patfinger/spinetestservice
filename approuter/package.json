@@ -1,0 +1,17 @@
+{
+    "name": "spineapprouter",
+    "description": "App Router",
+    "version": "1.0.0",
+    "main": "server.js",
+    "author": "SAP",
+    "license": "ISC",
+    "dependencies": {
+        "@sap/approuter": "^10.10.2"
+    },
+    "engines": {
+        "node": "^14.17.6"
+    },
+    "scripts": {
+        "start": "node node_modules/@sap/approuter/approuter.js"
+    }
+}

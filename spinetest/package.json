@@ -1,0 +1,24 @@
+{
+  "name": "spinetest",
+  "version": "1.0.0",
+  "description": "Simple Service for testing purposes",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "spine",
+    "test",
+    "nodejs",
+    "rest"
+  ],
+  "author": "Patrick Finger",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "engines": {
+    "node": "^14.17.6",
+    "npm": "^8.2.0"
+  }
+}
