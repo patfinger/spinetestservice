@@ -1,2 +1,2 @@
-# spinetestservice
-Test Service
+# NodeJS Test Service
+A simple Test Service for Service invocation
